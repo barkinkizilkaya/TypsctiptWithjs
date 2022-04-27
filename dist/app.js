@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 const e1 = {
     name: "Max",
     priviliges: ["create-server"],
@@ -10,6 +11,13 @@ function add(a, b) {
     }
     return a + b;
 }
+//Optional Changing
+const fetchedUserData = {
+    id: "u1",
+    name: "Max",
+    job: { title: "CEO", description: "My Own Desc" },
+};
+console.log((_a = fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
 const results = add(1, 5);
 function printEmployeeInformation(emp) {
     console.log("Name: " + emp.name);
