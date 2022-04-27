@@ -42,6 +42,12 @@ const fetchedUserData = {
 
 console.log(fetchedUserData?.job?.title);
 
+//Nullish Coalescing
+
+const userInput = null;
+
+const storedData = userInput ?? "DEFAULT";
+
 const results = add(1, 5);
 
 type UnknownEmployee = Employee | Admin;

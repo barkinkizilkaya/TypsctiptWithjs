@@ -18,6 +18,9 @@ const fetchedUserData = {
     job: { title: "CEO", description: "My Own Desc" },
 };
 console.log((_a = fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
+//Nullish Coalescing
+const userInput = null;
+const storedData = userInput !== null && userInput !== void 0 ? userInput : "DEFAULT";
 const results = add(1, 5);
 function printEmployeeInformation(emp) {
     console.log("Name: " + emp.name);
